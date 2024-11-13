@@ -127,7 +127,7 @@ async def getdata(session, stock):
                                       ])
                 fig.add_trace(
                     go.Scatter(x=newdf[newdf['o-hs']==1].index, y=newdf[newdf['o-hs']==1]['High'], mode='markers', marker_symbol='triangle-down',
-                               marker_size=15,marker_color='red'))
+                               marker_size=25,marker_color='red'))
 
                 fig.update_layout(autosize=False, width=1800, height=800, xaxis_rangeslider_visible=False)
                 fig.layout.xaxis.type = 'category'
@@ -143,7 +143,7 @@ async def getdata(session, stock):
                                       go.Scatter(x=newdf.index, y=newdf.ma200, line=dict(color='red', width=2),name='ma200')])
                 fig.add_trace(
                     go.Scatter(x=newdf[newdf['o-ls']==1].index, y=newdf[newdf['o-ls']==1]['Low'], mode='markers', marker_symbol='triangle-up',
-                               marker_size=15,marker_color='green'))
+                               marker_size=25,marker_color='green'))
 
                 fig.update_layout(autosize=False, width=1800, height=800, xaxis_rangeslider_visible=False)
                 fig.layout.xaxis.type = 'category'
