@@ -1,11 +1,9 @@
 pandas
 datetime
 numpy
-time
 ta
 asyncio
 aiohttp
-io
 nest_asyncio
 streamlit
 plotly
